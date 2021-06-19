@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "types": ["vite/client", "node"],
+    "esModuleInterop": false,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "outDir": "./.ts",
+
+    "moduleResolution": "node",
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "lib": ["DOM", "ESNext"],
+    "rootDir": ".",
+
+    "incremental": true
+  },
+  "include": ["./src"],
+}
+
+
