@@ -7,10 +7,11 @@
     "dev": "vite",
     "dev-hash": "VITE_HISTORY_HASH=true vite",
     "build": "vite build",
+    "build:gh": "vite build --base=/iherb-admin/",
     "serve": "vite preview",
     "ts": "tsc",
     "format": "prettier \"./src/**/*.{ts,tsx}\" --write",
-    "predeploy": "cross-env VITE_HISTORY_HASH=true ASSET_PATH=/iherb-admin/ yarn build",
+    "predeploy": "cross-env VITE_HISTORY_HASH=true ASSET_PATH=/iherb-admin/ yarn build:gh",
     "deploy": "gh-pages -d dist --remote origin"
   },
   "dependencies": {
