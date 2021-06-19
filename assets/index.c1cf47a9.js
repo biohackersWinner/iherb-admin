@@ -1,0 +1,18 @@
+import{Q as e,c as t,n,r,j as s,a as o,u as a,M as l,L as c,U as i,E as u,S as p,H as d,b as h,d as x,C as m,G as f,e as _,R as g,f as y,g as E,h as I}from"./vendor.86819600.js";let P;const v={},L=function(e,t){if(!t)return e();if(void 0===P){const e=document.createElement("link").relList;P=e&&e.supports&&e.supports("modulepreload")?"modulepreload":"preload"}return Promise.all(t.map((e=>{if(e in v)return;v[e]=!0;const t=e.endsWith(".css"),n=t?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${e}"]${n}`))return;const r=document.createElement("link");return r.rel=t?"stylesheet":P,t||(r.as="script",r.crossOrigin=""),r.href=e,document.head.appendChild(r),t?new Promise(((e,t)=>{r.addEventListener("load",e),r.addEventListener("error",t)})):void 0}))).then((()=>e()))};const k=new e({defaultOptions:{queries:{refetchOnWindowFocus:!1,staleTime:1/0,cacheTime:3e5,keepPreviousData:!1,refetchOnMount:!0,retry:!1}}}),O=t(),S=n.div`
+  padding-top: 120px;
+  text-align: center;
+`;class b extends r.exports.Component{constructor(){super(...arguments),this.state={error:null}}componentDidCatch(e){this.setState({error:e})}render(){const{error:e}=this.state;return e?s(S,null,"Что-то пошло не так"):this.props.children}}const j=n.div`
+  overflow: auto;
+  height: calc(100vh - 48px);
+`,D=o`
+  min-height: 100vh;
+`,R=o`
+  padding: 20px;
+`,T=o`
+  height: 100%;
+  user-select: none;
+`;function z(e){const{to:t,text:n,Icon:r}=e;return s(l.Item,{key:t},s(c,{to:t},s(r,null),s("span",null,n)))}function A(){const e=a();return s(l,{css:T,defaultSelectedKeys:[e.pathname],mode:"inline",theme:"dark"},z({to:"/",Icon:d,text:"Главная"}),z({text:"Продукция",to:"/products",Icon:p}),z({text:"Схемы (рецепты)",to:"/recipes",Icon:u}),z({to:"/profile",Icon:i,text:"Иванов Иван"}))}function C(e){const{children:t}=e,[n,o]=r.exports.useState(!1);return s(h,{css:D},s(h.Sider,{collapsible:!0,collapsed:n,onCollapse:function(e){o(e)}},s(j,null,s(A,null))),s(h,{css:R},s(b,null,t)))}const V=x({key:"iherb"}),w=o`
+  body {
+    margin: 0;
+  }
+`;function q(e){const{children:t}=e;return s(m,{value:V},s(f,{styles:w}),t)}const M=r.exports.lazy((()=>L((()=>import("./IndexPage.2cca2061.js")),["/assets/IndexPage.2cca2061.js","/assets/vendor.86819600.js"]))),W=r.exports.lazy((()=>L((()=>import("./LoginPage.aff7c738.js")),["/assets/LoginPage.aff7c738.js","/assets/vendor.86819600.js","/assets/common.df3a6644.js","/assets/FormInput.1201506c.js"]))),$=r.exports.lazy((()=>L((()=>import("./ProfilePage.18a259ae.js")),["/assets/ProfilePage.18a259ae.js","/assets/vendor.86819600.js"]))),B=r.exports.lazy((()=>L((()=>import("./ProductPage.124cd4b1.js")),["/assets/ProductPage.124cd4b1.js","/assets/vendor.86819600.js","/assets/FormSelect.8f58eafe.js","/assets/common.df3a6644.js"]))),F=r.exports.lazy((()=>L((()=>import("./RecipePage.957683a5.js")),["/assets/RecipePage.957683a5.js","/assets/vendor.86819600.js","/assets/FormSelect.8f58eafe.js","/assets/common.df3a6644.js","/assets/FormInput.1201506c.js"])));function G(e){const{path:t,exact:n,children:o}=e;return s(E,{path:t,exact:n},s(C,null,s(r.exports.Suspense,{fallback:null},o)))}function H(e){const{path:t,exact:n,children:o}=e;return s(E,{path:t,exact:n},s(r.exports.Suspense,{fallback:null},o))}function K(){return s(_,{client:k},s(q,null,s(g,{history:O},s(y,null,s(H,{path:"/login",exact:!0},s(W,null)),s(G,{path:"/",exact:!0},s(M,null)),s(G,{path:"/products/:productId?",exact:!0},s(B,null)),s(G,{path:"/recipes/:recipeId?",exact:!0},s(F,null)),s(G,{path:"/profile",exact:!0},s($,null))))),!1)}I.render(s(r.exports.StrictMode,null,s(K,null)),document.getElementById("root"));export{k as q};

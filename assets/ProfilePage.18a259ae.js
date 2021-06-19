@@ -1,0 +1,1 @@
+import{i as n,j as o,l as s,B as a}from"./vendor.86819600.js";function l(){const l=n();async function t(){l.push("/login")}return o(s.Fragment,null,o("span",null,o(a,{onClick:t,onKeyDown:t},"Выйти")))}export default l;
