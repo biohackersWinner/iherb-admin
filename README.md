@@ -42,7 +42,7 @@ Node, yarn
     yarn build
 
 ### Деплой на gh-pages
-    yarn build
+    yarn deploy
 
 
 
